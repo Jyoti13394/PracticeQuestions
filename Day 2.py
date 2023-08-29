@@ -19,9 +19,12 @@ def divide_chunks(list_1, n):
     for i in range(x, x + n):
         new_list.append(list_1[x: x + n])
         x = x + n
+        if x > len(list_1):
+            break
     return new_list
 
 
-print(divide_chunks(['geeks', 'for', 'geeks', 'like','geeky','nerdy', 'geek', 'love','questions','words', 'life'], 4))
+print(divide_chunks(['geeks', 'for', 'geeks', 'like','geeky','nerdy', 'geek',
+                                                          'love','questions','words', 'life'], 4))
 
 
