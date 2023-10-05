@@ -29,7 +29,9 @@ def fib():
         yield a
         a, b = b, a + b
 
-for i in fib():
-    if i <100:
-        print(i)
+
+for a in fib():
+    if a < 100:
+        print(a)
+
 
