@@ -31,4 +31,23 @@ list_1 = string_3.split()
 print(Counter(list_1))
 
 
+# Write a python program to convert 2 list into a dictionary
 
+list_3= ['Naina', 'Kim', 'Sheena']
+list_4= [67890, 7689, 45634]
+
+d = {}
+for i in range(0, len(list_3)):
+    if list_3[i] not in d.keys():
+        d[list_3[i]] = list_4[i]
+
+print(d)
+
+
+#Find missing number in an array
+
+array = [1, 6, 9, 3, 8, 7, 5, 4]
+
+sum_of_array = (max(array) * (max(array) + 1))/2
+missing_number = sum_of_array - sum(array)
+print(missing_number)
